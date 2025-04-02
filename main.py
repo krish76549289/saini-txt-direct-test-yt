@@ -328,7 +328,7 @@ async def txt_handler(bot: Client, m: Message):
     else:
         b_name = raw_text0
 
-    await editable.edit("╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━━➣ \n┣━━⪼ send `144`  for 144p\n┣━━⪼ send `240`  for 240p\n┣━━⪼ send `360`  for 360p\n┣━━⪼ send `480`  for 480p\n┣━━⪼ send `720`  for 720p\n┣━━⪼ send `1080` for 1080p\n╰━━⌈⚡[`🦋🇸‌🇦‌🇮‌🇳‌🇮‌🦋`]⚡⌋━━➣")
+    await editable.edit("╭━━━━❰ᴇɴᴛᴇʀ ʀᴇꜱᴏʟᴜᴛɪᴏɴ❱━━➣ \n┣━━⪼ send `144`  for 144p\n┣━━⪼ send `240`  for 240p\n┣━━⪼ send `360`  for 360p\n┣━━⪼ send `480`  for 480p\n┣━━⪼ send `720`  for 720p\n┣━━⪼ send `1080` for 1080p\n╰━━⌈⚡[` ⃪꯭➺꯭ ꯭𝅥‌꯭𝆬‌🦋⃪꯭ ─‌⃛┼ 𝞄⃕𝖋𝖋 समय यात्री Sᴛʀᴀɴɢᴇʀ ʙᴏʏs THE BOYS🥵⃝⃝ᬽ꯭`]⚡⌋━━➣")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     quality = f"{raw_text2}p"
@@ -356,9 +356,9 @@ async def txt_handler(bot: Client, m: Message):
     raw_text3 = input3.text
     await input3.delete(True)
     # Default credit message
-    credit = "️𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎 🕊️⁪⁬⁮⁮⁮"
+    credit = "️ ⃪꯭➺꯭ ꯭𝅥‌꯭𝆬‌🦋⃪꯭ ─‌⃛┼ 𝞄⃕𝖋𝖋 समय यात्री Sᴛʀᴀɴɢᴇʀ ʙᴏʏs THE BOYS🥵⃝⃝ᬽ꯭🕊️⁪⁬⁮⁮⁮"
     if raw_text3 == '1':
-        CR = '𝙎𝘼𝙄𝙉𝙄 𝘽𝙊𝙏𝙎 🕊️'
+        CR = ' ⃪꯭➺꯭ ꯭𝅥‌꯭𝆬‌🦋⃪꯭ ─‌⃛┼ 𝞄⃕𝖋𝖋 समय यात्री Sᴛʀᴀɴɢᴇʀ ʙᴏʏs THE BOYS🥵⃝⃝ᬽ꯭🕊️'
     elif raw_text3:
         CR = raw_text3
     else:
@@ -451,12 +451,12 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:  
-                cc = f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n🎞️𝐓𝐢𝐭𝐥𝐞 » `{name1}` **[{res}]**.mp4\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CR}`\n'
-                cc1 = f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n📕𝐓𝐢𝐭𝐥𝐞 » `{name1}` .pdf\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CR}`\n'
-                cczip = f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n📁𝐓𝐢𝐭𝐥𝐞 » `{name1}` .zip\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CR}`\n'  
-                ccimg = f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n🖼️𝐓𝐢𝐭𝐥𝐞 » `{name1}` .jpg\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CR}`\n'
-                cccpvod = f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n🎞️𝐓𝐢𝐭𝐥𝐞 » `{name1}` .mp4\n\n<a href="{urlcpvod}">__**Click Here to Watch Stream**__</a>\n🔗𝐋𝐢𝐧𝐤 » {link0}\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CR}`\n'
-                ccyt = f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n🎞️𝐓𝐢𝐭𝐥𝐞 » `{name1}` .mp4\n\n<a href="{url}">__**Click Here to Watch Stream**__</a>\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CR}`\n'
+                cc = f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n🎞️𝐓𝐢𝐭𝐥𝐞 » `{name1}` **[{res}]**.mp4\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n**👨‍💻𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » [{CR}](https://i.ibb.co/0p3pmkwn/Angel.jpg)**\n'
+                cc1 = f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n📕𝐓𝐢𝐭𝐥𝐞 » `{name1}` .pdf\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n**❤️‍🔥𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 »  [{CR}](https://i.ibb.co/ccV44ZRS/STRANGER-BOY.jpg)**\n'
+                cczip = f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n📁𝐓𝐢𝐭𝐥𝐞 » `{name1}` .zip\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n**®️𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 »  [{CR}](https://i.ibb.co/KjNBPrtk/STRANGER-BOY.jpg)**\n'  
+                ccimg = f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n🖼️𝐓𝐢𝐭𝐥𝐞 » `{name1}` .jpg\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n**🔏𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 »[{CR}] (https://i.ibb.co/ccV44ZRS/STRANGER-BOY.jpg)**\n'
+                cccpvod = f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n🎞️𝐓𝐢𝐭𝐥𝐞 » `{name1}` .mp4\n\n<a href="{urlcpvod}">__**Click Here to Watch Stream**__</a>\n🔗𝐋𝐢𝐧𝐤 » {link0}\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n**👩‍🎓𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 »  [{CR}](https://i.ibb.co/dsw2rr27/STRANGER-BOY.jpg)**\n'
+                ccyt = f'——— ✨ [{str(count).zfill(3)}]({link0}) ✨ ———\n\n🎞️𝐓𝐢𝐭𝐥𝐞 » `{name1}` .mp4\n\n<a href="{url}">__**Click Here to Watch Stream**__</a>\n\n<pre><code>📚 Course : {b_name}</code></pre>\n\n**💗𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 »  [{CR}](https://i.ibb.co/5NgcXjR/STRANGER-BOY.jpg)**\n'
                                  
                 if "drive" in url:
                     try:
